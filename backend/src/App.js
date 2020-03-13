@@ -1,7 +1,14 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import cors from 'cors';
 
 import routes from './routes';
+
+mongoose.connect(process.env.DB_CONNECTION, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
 
 class App {
   constructor() {
