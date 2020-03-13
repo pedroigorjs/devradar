@@ -1,5 +1,6 @@
 import Dev from '../models/Dev';
 import api from '../services/api';
+import stringToArray from '../utils/parsingStringAsArray';
 
 class DevController {
   async index(req, res) {
