@@ -31,7 +31,11 @@ export const DevItem = styled.li`
   padding: 2rem;
   border-radius: 4px;
   width: 100%;
+  height: 230px;
   border-bottom: 2px solid ${darken(0.1, '#e5e6ef')};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   a {
     color: #7d40e7;
@@ -58,6 +62,10 @@ export const DevInfo = styled.header`
 `;
 export const Bio = styled.p`
   margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 `;
 
 export const Techs = styled.p`
